@@ -1,6 +1,6 @@
 <?php
 //including the database connection file
-include_once("classes/Crud.php");
+include_once("Crud.php");
 
 $crud = new Crud();
 
@@ -16,7 +16,7 @@ $result = $crud->getData($query);
 </head>
 
 <body>
-<a href="add.html">Add New Data</a><br/><br/>
+<a href="form.html">Add New Data</a><br/><br/>
 
 <table width='80%' border=0>
 
