@@ -1,15 +1,14 @@
 <?php
 include_once 'DbConfig.php';
 include_once 'user.php';
-$DbConfig=new Dbconfig();
-$connect=$DbConfig->connection;
-$user=new user();
-
 class Crud
 {
     public function __construct()
     {
-        parent::__construct();
+        $DbConfig=new Dbconfig();
+        $this->connect=$DbConfig->connection;
+        $user=new user();
+
     }
 
     public function getData($query)
@@ -63,7 +62,6 @@ class Crud
     }
     public function show_user()
     {
-        echo user;
 
     }
 }
